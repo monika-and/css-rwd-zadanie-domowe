@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+.main {
+    height: 100vh;
+}
+
 header#main-header {
 background-image: url(../img/man-1.jpg);
 background-position: center;
@@ -10,7 +14,7 @@ font-family: Verdana, Geneva, sans-serif;
 color: #fff;
 height:100vh;
 position: relative;
-margin: 0;
+margin: 0 auto;
 }
 
 header#main-header h2 {
@@ -20,7 +24,7 @@ header#main-header h2 {
     left: 0;
     right: 0;
     top: 35%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     padding: 40px;
     
 }
@@ -32,24 +36,25 @@ header#main-header h1 {
     left: 0;
     right: 0;
     top: 40%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     padding: 40px;
 }
 
-@media (max-width: 1170px) {
+@media (max-height: 1170px) {
     #main header {
-        height: 70vh;
         text-align: right;
         vertical-align: top;
+        background-image: url(../img/man-2.jpg);
+        background-position: center;
+        height: 70vh;
     }
 }
     
 
-@media (max-width: 992px) {
+@media (max-height: 992px) {
     #main header {
         height: 50vh;
-        text-align: right;
-        vertical-align: top;
+        text-align: center;
     }
 }
  
